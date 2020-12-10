@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         let data = try! Data(contentsOf: url)
         let JSON = try! JSONSerialization.jsonObject(with: data, options: [])
         print(JSON)
+        // Mark:- JSON Serialization
         /* JSON Serialization - starts here */
         if let jsonDict = JSON as? [String: Any] {
             print(jsonDict)
@@ -31,7 +32,6 @@ class ViewController: UIViewController {
             }
         }
         /* JSON Serialization - ends here */
-      }
-
+   }
 }
 
